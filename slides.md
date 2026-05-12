@@ -30,3 +30,7 @@ src: ./pages/model-comparison.md
 ---
 src: ./pages/tool-comparison.md
 ---
+
+---
+src: ./pages/claude-code-tips.md
+---
