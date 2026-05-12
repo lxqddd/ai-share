@@ -131,36 +131,36 @@ layout: section
 
 ---
 
-# 编码能力对比（Artificial Analysis Coding Index）
+# 编码能力对比（Arena AI WebDev 排行榜）
 
 <div class="text-xs opacity-50 mb-2">
-数据来源：<a href="https://artificialanalysis.ai/models?intelligence=coding-index" target="_blank">Artificial Analysis Coding Index</a> · 基于 Terminal-Bench Hard + SciCode 加权平均 · 2026.05
+数据来源：<a href="https://arena.ai/leaderboard/code" target="_blank">Arena AI WebDev Leaderboard</a> · 基于真实 Web 开发任务的盲评投票 · 2026.05.12
 </div>
 
 <div class="mt-4 text-sm">
 
-| 排名 | 模型 | Coding Index | 厂商 |
-|:---:|------|:-----------:|------|
-| 1 | **GPT-5.5 (xhigh)** | **59** | OpenAI |
-| 2 | GPT-5.4 (xhigh) | 57 | OpenAI |
-| 3 | Gemini 3.1 Pro Preview | 56 | Google |
-| 4 | Claude Opus 4.7 (max) | 53 | Anthropic |
-| 5 | GPT-5.4 mini (xhigh) | 51 | OpenAI |
-| 6 | Claude Sonnet 4.6 (max) | 51 | Anthropic |
-| 7 | Muse Spark | 47 | — |
-| 8 | **DeepSeek V4 Pro (Max)** | **47** | DeepSeek |
-| 9 | Kimi K2.6 | 47 | 月之暗面 |
-| 10 | MiMo-V2.5-Pro | 46 | 小米 |
-| 11 | Qwen3.6 Max Preview | 45 | 阿里 |
-| 12 | **GLM-5.1** | **43** | 智谱 |
-| 13 | Gemini 3 Flash | 43 | Google |
-| 14 | **MiniMax M2.7** | **42** | MiniMax |
-| 15 | Qwen3.5 397B | 41 | 阿里 |
+| 排名 | 模型 | ELO | 厂商 |
+|:---:|------|:---:|------|
+| 1 | Claude Opus 4.7 (thinking) | 1570 | Anthropic |
+| 2 | Claude Opus 4.7 | 1560 | Anthropic |
+| 3 | Claude Opus 4.6 (thinking) | 1549 | Anthropic |
+| 4 | Claude Opus 4.6 | 1544 | Anthropic |
+| 5 | **GLM-5.1** | **1531** | 智谱 |
+| 6 | Claude Sonnet 4.6 | 1524 | Anthropic |
+| 7 | **Kimi K2.6** | **1523** | 月之暗面 |
+| 8 | Muse Spark | 1509 | Meta |
+| 9 | GPT-5.5 (codex-harness) | 1491 | OpenAI |
+| 10 | **Qwen 3.6 Max** | **1478** | 阿里 |
+| 11 | **MiMo V2.5 Pro** | **1472** | 小米 |
+| 12 | **Qwen 3.6 Plus** | **1463** | 阿里 |
+| 13 | GPT-5.4 (codex-harness) | 1457 | OpenAI |
+| 14 | **DeepSeek V4 Pro** | **1454** | DeepSeek |
+| 15 | Gemini 3.1 Pro Preview | 1452 | Google |
 
 </div>
 
 <div v-click class="mt-4 p-3 rounded bg-yellow-500/10 border border-yellow-500/20 text-sm">
-💡 <strong>关键发现：</strong>GPT-5.5 以 59 分领跑；DeepSeek V4 Pro（47分）紧追 Claude Sonnet 4.6（51分），差距仅 4 分；榜单前十五中国产模型占据 7 席（DeepSeek、Kimi、小米、Qwen ×2、GLM、MiniMax）
+💡 <strong>关键发现：</strong>Claude 在 WebDev 编码中占据绝对优势，包揽前 4 名；GLM-5.1（1531）超越 GPT-5.5（1491）位列第 5，是排名最高的国产模型；前 15 中国产模型占据 7 席（GLM、Kimi、Qwen ×2、MiMo、DeepSeek）
 </div>
 
 ---
@@ -206,7 +206,7 @@ class: text-center
 
 <div v-click class="p-3 rounded bg-green-500/10 border border-green-500/20">
 <div class="font-bold text-green-400">追求性价比 + 国内直连</div>
-<div class="text-sm opacity-70">DeepSeek V4 — 能力比肩 GPT-5，价格为 1/10</div>
+<div class="text-sm opacity-70">GLM-5.1 — WebDev 排行第 5，超越 GPT-5.5，API 价格仅为其 1/10；DeepSeek V4 Pro 紧随其后</div>
 </div>
 
 <div v-click class="p-3 rounded bg-purple-500/10 border border-purple-500/20">
