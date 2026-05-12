@@ -21,7 +21,7 @@ layout: section
 <div><span class="opacity-50">旗舰：</span>GPT-5.5 Pro</div>
 <div><span class="opacity-50">轻量：</span>GPT-5.4 mini</div>
 <div><span class="opacity-50">推理：</span>o3 / o4-mini</div>
-<div class="mt-2 text-xs opacity-50">2026.4 发布，10万亿参数级别</div>
+<div class="mt-2 text-xs opacity-50">2026.4 发布，推理能力大幅提升</div>
 </div>
 </div>
 
@@ -160,7 +160,7 @@ layout: section
 </div>
 
 <div v-click class="mt-4 p-3 rounded bg-yellow-500/10 border border-yellow-500/20 text-sm">
-💡 <strong>关键发现：</strong>GPT-5.5 以 59 分领跑；DeepSeek V4 Pro（47分）紧追 Claude Sonnet 4.6（51分），差距仅 4 分；国产模型前十占 5 席（DeepSeek、Kimi、小米、Qwen、GLM）
+💡 <strong>关键发现：</strong>GPT-5.5 以 59 分领跑；DeepSeek V4 Pro（47分）紧追 Claude Sonnet 4.6（51分），差距仅 4 分；榜单前十五中国产模型占据 7 席（DeepSeek、Kimi、小米、Qwen ×2、GLM、MiniMax）
 </div>
 
 ---

@@ -111,8 +111,8 @@ graph LR
 </div>
 
 <div v-click class="p-3 rounded bg-orange-500/10 border border-orange-500/20">
-<div class="font-bold text-orange-400 mb-1">模型绑定</div>
-<div class="text-sm opacity-70">仅 Anthropic Claude 系列，编码能力顶尖</div>
+<div class="font-bold text-orange-400 mb-1">模型支持</div>
+<div class="text-sm opacity-70">原生 Anthropic Claude 系列；通过 CC Switch 可接入 DeepSeek / GLM / MiniMax 等第三方模型</div>
 </div>
 </div>
 
@@ -158,7 +158,7 @@ opencode "分析项目架构"
 </div>
 
 <div v-click class="mt-4 p-3 rounded bg-gray-500/5 text-sm opacity-70">
-<strong>对比：</strong>Claude Code 编码能力最强但模型锁定；OpenCode 开源免费、模型可选、LSP 集成深，是国产模型用户的理想选择
+<strong>对比：</strong>Claude Code 编码能力最强，原生绑定 Claude 但可通过 CC Switch 接入第三方模型；OpenCode 开源免费、模型可选、LSP 集成深，是国产模型用户的理想选择
 </div>
 
 ---
@@ -176,7 +176,7 @@ opencode "分析项目架构"
 | 自动修复错误 | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
 | Git/PR 操作 | ⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
 | 项目级理解 | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
-| 模型自由度 | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐（仅Claude） | ⭐⭐⭐⭐⭐ |
+| 模型自由度 | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐（+CC Switch） | ⭐⭐⭐⭐⭐ |
 | 开源 | ❌ | ❌ | ❌ | ❌ | ✅ |
 | 上手难度 | 低 | 低 | 低 | 中 | 低 |
 

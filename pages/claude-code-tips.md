@@ -57,6 +57,10 @@ claude --resume              # 恢复历史会话
 <strong>计费：</strong>使用 Anthropic API 额度，Sonnet 性价比最高；也可通过 Claude Max 订阅使用
 </div>
 
+<div v-click class="mt-3 p-3 rounded bg-emerald-500/10 border border-emerald-500/20 text-sm">
+<strong>第三方模型：</strong>通过 CC Switch 等工具，可切换到 DeepSeek / GLM / MiniMax 等国产模型，大幅降低使用成本
+</div>
+
 </div>
 
 </div>
@@ -516,12 +520,9 @@ graph LR
 // .claude/settings.json 配置
 {
   "mcpServers": {
-    "zhipu-vision": {
+    "vision-mcp-server": {
       "command": "npx",
-      "args": ["-y", "@anthropic-ai/vision-mcp-server"],
-      "env": {
-        "ZHIPU_API_KEY": "your-key"
-      }
+      "args": ["-y", "@z_ai/mcp-server"]
     }
   }
 }
@@ -535,6 +536,87 @@ graph LR
 
 <div v-click class="mt-4 p-3 rounded bg-yellow-500/10 border border-yellow-500/20 text-sm">
 💡 <strong>设计到代码的完整闭环：</strong>Figma MCP（读设计稿）+ 智谱视觉 MCP（截图对比验证）= AI 完成从设计到代码再到质量验收的全流程
+</div>
+
+</div>
+
+---
+
+# CC Switch — 模型一键切换
+
+<div class="mt-6">
+
+### Claude Code 的模型"遥控器"
+
+<div class="grid grid-cols-2 gap-6 mt-4">
+
+<div>
+
+**桌面版（推荐）**
+
+<div class="mt-3 space-y-3">
+<div class="p-3 rounded bg-emerald-500/10 border border-emerald-500/20">
+<div class="font-bold text-emerald-400 mb-1">CC Switch 桌面应用</div>
+<div class="text-sm opacity-70">基于 Tauri + Rust，GUI 一键切换模型供应商</div>
+</div>
+
+<div class="text-sm space-y-2">
+<div><strong>支持的编码工具：</strong></div>
+<div class="opacity-70">Claude Code · Codex CLI · Gemini CLI · OpenCode · OpenClaw</div>
+</div>
+
+<div class="text-sm space-y-2">
+<div><strong>核心能力：</strong></div>
+<ul class="opacity-70 space-y-1">
+<li>内置 50+ 中转节点预设，开箱即用</li>
+<li>支持自定义节点（Kimi、DeepSeek、GLM 等）</li>
+<li>本地代理，切换无需重启 Claude Code</li>
+<li>统一管理多个工具的模型配置</li>
+</ul>
+</div>
+
+<div class="p-3 rounded bg-emerald-500/5 text-sm">
+<strong>典型场景：</strong>官方额度用完 → 一键切到 DeepSeek / GLM 继续编码
+</div>
+
+</div>
+
+</div>
+
+<div>
+
+**CLI 版（轻量替代）**
+
+<div class="mt-3 space-y-3">
+<div class="p-3 rounded bg-violet-500/10 border border-violet-500/20">
+<div class="font-bold text-violet-400 mb-1">cc-model-switcher</div>
+<div class="text-sm opacity-70">Node.js CLI 工具，命令行快速切换模型</div>
+</div>
+
+```bash
+# 安装
+npm install -g cc-model-switcher
+
+# 使用
+cc_switch              # 默认 Kimi 模型
+cc_switch deepseek     # 切换到 DeepSeek
+cc_switch glm46        # 切换到 GLM-4.6
+cc_switch --list       # 查看所有可用模型
+cc_switch -i           # 交互式选择
+```
+
+<div class="p-3 rounded bg-violet-500/5 text-sm">
+<strong>配置文件：</strong><code>~/.models.json</code> — 可自定义添加任意模型供应商的 API Key 和 Base URL
+</div>
+
+<div class="p-3 rounded bg-violet-500/5 text-sm">
+<strong>工作原理：</strong>通过设置 <code>ANTHROPIC_BASE_URL</code> 和 <code>ANTHROPIC_AUTH_TOKEN</code> 环境变量，将 Claude Code 的请求重定向到目标模型 API
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
