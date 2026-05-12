@@ -134,7 +134,7 @@ layout: section
 # 编码能力对比（Arena AI WebDev 排行榜）
 
 <div class="text-xs opacity-50 mb-2">
-数据来源：<a href="https://arena.ai/leaderboard/code" target="_blank">Arena AI WebDev Leaderboard</a> · 基于真实 Web 开发任务的盲评投票 · 2026.05.12
+数据来源：<a href="https://arena.ai/leaderboard/code/webdev" target="_blank">Arena AI WebDev Leaderboard</a> · 基于真实 Web 开发任务的盲评投票 · 2026.05.12
 </div>
 
 <div class="mt-4 text-sm">
