@@ -197,30 +197,62 @@ class: text-center
 
 # 模型选型建议
 
-<div class="mt-8 text-left max-w-lg mx-auto space-y-4">
+<div class="mt-6 grid grid-cols-2 gap-5">
 
-<div v-click class="p-3 rounded bg-blue-500/10 border border-blue-500/20">
-<div class="font-bold text-blue-400">追求编码质量</div>
-<div class="text-sm opacity-70">Claude Opus 4.7 / Sonnet 4.6 — 行业公认的编码第一梯队</div>
+<div v-click class="p-4 rounded-lg border border-blue-500/30 bg-blue-500/5">
+<div class="flex items-center gap-2 mb-2">
+<span class="text-lg font-bold text-blue-400">Claude</span>
+<span class="text-xs opacity-50">Anthropic</span>
+</div>
+<div class="text-sm space-y-1">
+<div><span class="opacity-50">代表：</span>Opus 4.7（#1）/ Sonnet 4.6（#6）</div>
+<div><span class="opacity-50">优势：</span>WebDev 排行包揽前 4，编码质量公认最强</div>
+<div><span class="opacity-50">适合：</span>核心模块开发、复杂重构、代码审查</div>
+<div><span class="opacity-50">注意：</span>需海外 API 或中转，Opus 价格较高</div>
+</div>
 </div>
 
-<div v-click class="p-3 rounded bg-green-500/10 border border-green-500/20">
-<div class="font-bold text-green-400">追求性价比 + 国内直连</div>
-<div class="text-sm opacity-70">GLM-5.1 — WebDev 排行第 5，超越 GPT-5.5，API 价格仅为其 1/10；DeepSeek V4 Pro 紧随其后</div>
+<div v-click class="p-4 rounded-lg border border-green-500/30 bg-green-500/5">
+<div class="flex items-center gap-2 mb-2">
+<span class="text-lg font-bold text-green-400">GLM</span>
+<span class="text-xs opacity-50">智谱</span>
+</div>
+<div class="text-sm space-y-1">
+<div><span class="opacity-50">代表：</span>GLM-5.1（#5）/ GLM-4.7（#20）</div>
+<div><span class="opacity-50">优势：</span>国产模型排名最高，超越 GPT-5.5；Coding Plan 含视觉/搜索 MCP</div>
+<div><span class="opacity-50">适合：</span>国内团队首选，Claude Code 平替</div>
+<div><span class="opacity-50">价格：</span>Coding Plan ¥49~469/月，国内直连</div>
+</div>
 </div>
 
-<div v-click class="p-3 rounded bg-purple-500/10 border border-purple-500/20">
-<div class="font-bold text-purple-400">私有化部署需求</div>
-<div class="text-sm opacity-70">Qwen 3.5 — 仍有开源权重，可本地部署，数据不出域</div>
+<div v-click class="p-4 rounded-lg border border-amber-500/30 bg-amber-500/5">
+<div class="flex items-center gap-2 mb-2">
+<span class="text-lg font-bold text-amber-400">MiniMax</span>
+<span class="text-xs opacity-50">MiniMax</span>
+</div>
+<div class="text-sm space-y-1">
+<div><span class="opacity-50">代表：</span>MiniMax M2.7</div>
+<div><span class="opacity-50">优势：</span>4M tokens 超长上下文，一次读入整个项目</div>
+<div><span class="opacity-50">适合：</span>大型代码库分析、长文档处理、全项目重构</div>
+<div><span class="opacity-50">价格：</span>¥1/¥8 每 1M tokens，开源可私有化</div>
+</div>
 </div>
 
-<div v-click class="p-3 rounded bg-amber-500/10 border border-amber-500/20">
-<div class="font-bold text-amber-400">超长上下文场景</div>
-<div class="text-sm opacity-70">MiniMax M2.7（4M tokens）— 一次读入整个大型项目；Gemini 3.1 Pro（1M+ tokens）</div>
+<div v-click class="p-4 rounded-lg border border-purple-500/30 bg-purple-500/5">
+<div class="flex items-center gap-2 mb-2">
+<span class="text-lg font-bold text-purple-400">Qwen</span>
+<span class="text-xs opacity-50">阿里</span>
+</div>
+<div class="text-sm space-y-1">
+<div><span class="opacity-50">代表：</span>Qwen 3.6 Max（#10）/ Qwen 3.5</div>
+<div><span class="opacity-50">优势：</span>系列最全，多语言能力强，仍有开源权重</div>
+<div><span class="opacity-50">适合：</span>私有化部署、数据敏感场景、多语言项目</div>
+<div><span class="opacity-50">价格：</span>¥2/¥8 每 1M tokens，可本地部署</div>
+</div>
 </div>
 
 </div>
 
-<div v-click class="mt-12 text-sm opacity-50">
+<div v-click class="mt-4 text-sm opacity-50 text-center">
   模型只是基础，接下来看看基于这些模型的编码工具有哪些 →
 </div>
