@@ -6,7 +6,6 @@ info: |
 class: text-center
 drawings:
   persist: false
-transition: slide-left
 ---
 
 # AI 编码工具与模型技术分享

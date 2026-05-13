@@ -1,5 +1,4 @@
 ---
-transition: fade-out
 ---
 
 # 开发者的日常
@@ -24,29 +23,29 @@ pie title 开发者时间分配（行业调研）
 
 </div>
 
-<div v-click class="mt-4">
+<div class="mt-4">
 
-<div v-click class="mb-6 p-4 rounded bg-red-500/10 border border-red-500/20">
-<div class="text-red-400 font-bold mb-2">低价值重复劳动</div>
-<ul class="text-sm opacity-80">
+<div v-click class="mb-3 p-3 rounded bg-red-500/10 border border-red-500/20">
+<div class="text-red-400 font-bold text-sm mb-1">低价值重复劳动</div>
+<ul class="text-xs opacity-80">
 <li>CRUD、表单验证、类型定义</li>
 <li>重复的组件模板和样式</li>
 <li>API 对接的样板代码</li>
 </ul>
 </div>
 
-<div v-click class="mb-6 p-4 rounded bg-yellow-500/10 border border-yellow-500/20">
-<div class="text-yellow-400 font-bold mb-2">上下文切换成本</div>
-<ul class="text-sm opacity-80">
+<div v-click class="mb-3 p-3 rounded bg-yellow-500/10 border border-yellow-500/20">
+<div class="text-yellow-400 font-bold text-sm mb-1">上下文切换成本</div>
+<ul class="text-xs opacity-80">
 <li>频繁在 IDE 和浏览器间切换查文档</li>
 <li>Stack Overflow 来回翻找答案</li>
 <li>在多个文件间跳转理解逻辑</li>
 </ul>
 </div>
 
-<div v-click class="p-4 rounded bg-blue-500/10 border border-blue-500/20">
-<div class="text-blue-400 font-bold mb-2">知识壁垒</div>
-<ul class="text-sm opacity-80">
+<div v-click class="p-3 rounded bg-blue-500/10 border border-blue-500/20">
+<div class="text-blue-400 font-bold text-sm mb-1">知识壁垒</div>
+<ul class="text-xs opacity-80">
 <li>不熟悉的框架/API 上手慢</li>
 <li>遗留代码理解困难</li>
 <li>跨领域开发（前端↔后端）效率低</li>

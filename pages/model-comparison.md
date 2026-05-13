@@ -197,7 +197,7 @@ class: text-center
 
 # 模型选型建议
 
-<div class="mt-6 grid grid-cols-2 gap-5">
+<div class="mt-6 grid grid-cols-2 gap-5 text-left">
 
 <div v-click class="p-4 rounded-lg border border-blue-500/30 bg-blue-500/5">
 <div class="flex items-center gap-2 mb-2">

@@ -10,10 +10,10 @@ AI 编码工具对比
 
 # AI 编码工具分类
 
-<div class="mt-8">
+<div class="mt-4">
 
-```mermaid {scale: 0.7}
-graph LR
+```mermaid {scale: 0.4}
+graph TB
     A[AI 编码工具] --> B[IDE 内嵌]
     A --> C[CLI Agent]
     A --> D[代码审查]
@@ -34,7 +34,7 @@ graph LR
 
 </div>
 
-<div v-click class="mt-4 p-3 rounded bg-gray-500/5 text-sm opacity-70">
+<div v-click class="mt-2 p-2 rounded bg-gray-500/5 text-sm opacity-70">
 <strong>核心趋势：</strong>工具从"代码补全"进化到"自主 Agent" — 不只是建议代码，而是能理解需求、读写文件、执行命令、自动调试
 </div>
 
@@ -93,7 +93,7 @@ graph LR
 
 # CLI Agent 工具：Claude Code vs OpenCode
 
-<div class="grid grid-cols-2 gap-6 mt-6">
+<div class="grid grid-cols-2 gap-6">
 
 <div>
 
@@ -190,25 +190,25 @@ opencode "分析项目架构"
 
 # 团队落地建议
 
-<div class="mt-6 grid grid-cols-2 gap-6">
+<div class="mt-4 grid grid-cols-2 gap-4">
 
 <div>
 
 ### 推荐工具组合
 
-<div v-click class="p-3 rounded bg-blue-500/10 border border-blue-500/20 mb-4">
-<div class="font-bold text-blue-400">日常编码</div>
-<div class="text-sm opacity-70">Cursor（主力IDE）或 Copilot（VS Code 插件）— 行内补全 + 对话</div>
+<div v-click class="p-2 rounded bg-blue-500/10 border border-blue-500/20 mb-2">
+<div class="font-bold text-blue-400 text-sm">日常编码</div>
+<div class="text-xs opacity-70">Cursor（主力IDE）或 Copilot（VS Code 插件）— 行内补全 + 对话</div>
 </div>
 
-<div v-click class="p-3 rounded bg-green-500/10 border border-green-500/20 mb-4">
-<div class="font-bold text-green-400">复杂任务</div>
-<div class="text-sm opacity-70">Claude Code（编码最强）或 OpenCode（开源免费 + 国产模型）— 重构、Bug 修复、项目分析</div>
+<div v-click class="p-2 rounded bg-green-500/10 border border-green-500/20 mb-2">
+<div class="font-bold text-green-400 text-sm">复杂任务</div>
+<div class="text-xs opacity-70">Claude Code（编码最强）或 OpenCode（开源免费 + 国产模型）— 重构、Bug 修复、项目分析</div>
 </div>
 
-<div v-click class="p-3 rounded bg-purple-500/10 border border-purple-500/20">
-<div class="font-bold text-purple-400">代码审查</div>
-<div class="text-sm opacity-70">Claude Code Review / CodeRabbit — 自动 PR Review</div>
+<div v-click class="p-2 rounded bg-purple-500/10 border border-purple-500/20">
+<div class="font-bold text-purple-400 text-sm">代码审查</div>
+<div class="text-xs opacity-70">Claude Code Review / CodeRabbit — 自动 PR Review</div>
 </div>
 
 </div>
@@ -217,24 +217,24 @@ opencode "分析项目架构"
 
 ### 效率提升路径
 
-<div v-click class="mb-3">
-<div class="font-bold">Phase 1 — 体验期（1-2 周）</div>
-<div class="text-sm opacity-70">安装 Cursor，用 Tab 补全和 Chat 日常编码</div>
+<div v-click class="mb-2">
+<div class="font-bold text-sm">Phase 1 — 体验期（1-2 周）</div>
+<div class="text-xs opacity-70">安装 Cursor，用 Tab 补全和 Chat 日常编码</div>
 </div>
 
-<div v-click class="mb-3">
-<div class="font-bold">Phase 2 — 进阶期（2-4 周）</div>
-<div class="text-sm opacity-70">学习 Prompt 技巧，使用 Agent 模式处理复杂需求</div>
+<div v-click class="mb-2">
+<div class="font-bold text-sm">Phase 2 — 进阶期（2-4 周）</div>
+<div class="text-xs opacity-70">学习 Prompt 技巧，使用 Agent 模式处理复杂需求</div>
 </div>
 
-<div v-click class="mb-3">
-<div class="font-bold">Phase 3 — 深度期（1-2 月）</div>
-<div class="text-sm opacity-70">引入 Claude Code，建立团队 CLAUDE.md 统一上下文</div>
+<div v-click class="mb-2">
+<div class="font-bold text-sm">Phase 3 — 深度期（1-2 月）</div>
+<div class="text-xs opacity-70">引入 Claude Code，建立团队 CLAUDE.md 统一上下文</div>
 </div>
 
-<div v-click class="mb-3">
-<div class="font-bold">Phase 4 — 规模化</div>
-<div class="text-sm opacity-70">自动化 PR Review、CI 集成、效率数据度量</div>
+<div v-click class="mb-2">
+<div class="font-bold text-sm">Phase 4 — 规模化</div>
+<div class="text-xs opacity-70">自动化 PR Review、CI 集成、效率数据度量</div>
 </div>
 
 </div>
