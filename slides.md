@@ -33,3 +33,7 @@ src: ./pages/tool-comparison.md
 ---
 src: ./pages/claude-code-tips.md
 ---
+
+---
+src: ./pages/auto-testing.md
+---

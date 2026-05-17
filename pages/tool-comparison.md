@@ -10,31 +10,59 @@ AI 编码工具对比
 
 # AI 编码工具分类
 
-<div class="mt-4">
+<div class="grid grid-cols-2 gap-4 mt-6">
 
-```mermaid {scale: 0.4}
-graph TB
-    A[AI 编码工具] --> B[IDE 内嵌]
-    A --> C[CLI Agent]
-    A --> D[代码审查]
-    A --> E[低代码/生成]
-    B --> B1[GitHub Copilot]
-    B --> B2[Cursor]
-    B --> B3[Windsurf]
-    C --> C1[Claude Code]
-    C --> C2[OpenCode]
-    C --> C3[Codex CLI]
-    C --> C4[Aider]
-    D --> D1[CodeRabbit]
-    D --> D2[Claude Code Review]
-    E --> E1[v0 by Vercel]
-    E --> E2[Bolt]
-    E --> E3[Lovable]
-```
+<div v-click class="p-4 rounded-lg border border-blue-500/30 bg-blue-500/5">
+<div class="flex items-center gap-2 mb-3">
+<span class="text-lg">🖥️</span>
+<span class="font-bold text-blue-400">IDE 内嵌</span>
+</div>
+<div class="text-sm space-y-1">
+<div><span class="opacity-50">代表：</span>Cursor / GitHub Copilot / Windsurf</div>
+<div><span class="opacity-50">特点：</span>嵌入编辑器，行内补全 + 对话 + Agent 模式</div>
+<div><span class="opacity-50">适合：</span>日常编码辅助，上手门槛最低</div>
+</div>
+</div>
+
+<div v-click class="p-4 rounded-lg border border-orange-500/30 bg-orange-500/5">
+<div class="flex items-center gap-2 mb-3">
+<span class="text-lg">⌨️</span>
+<span class="font-bold text-orange-400">CLI Agent</span>
+</div>
+<div class="text-sm space-y-1">
+<div><span class="opacity-50">代表：</span>Claude Code / OpenCode / Codex CLI / Aider</div>
+<div><span class="opacity-50">特点：</span>终端运行，自主读写文件、执行命令、自动调试</div>
+<div><span class="opacity-50">适合：</span>复杂多步骤任务、重构、项目级操作</div>
+</div>
+</div>
+
+<div v-click class="p-4 rounded-lg border border-green-500/30 bg-green-500/5">
+<div class="flex items-center gap-2 mb-3">
+<span class="text-lg">🔍</span>
+<span class="font-bold text-green-400">代码审查</span>
+</div>
+<div class="text-sm space-y-1">
+<div><span class="opacity-50">代表：</span>CodeRabbit / Claude Code Review</div>
+<div><span class="opacity-50">特点：</span>自动 PR Review，安全漏洞检测，代码质量评估</div>
+<div><span class="opacity-50">适合：</span>团队协作，保障代码质量</div>
+</div>
+</div>
+
+<div v-click class="p-4 rounded-lg border border-purple-500/30 bg-purple-500/5">
+<div class="flex items-center gap-2 mb-3">
+<span class="text-lg">🎨</span>
+<span class="font-bold text-purple-400">低代码/生成</span>
+</div>
+<div class="text-sm space-y-1">
+<div><span class="opacity-50">代表：</span>v0 by Vercel</div>
+<div><span class="opacity-50">特点：</span>自然语言描述 → 完整前端应用，可视化 + 代码生成</div>
+<div><span class="opacity-50">适合：</span>快速原型、前端页面、MVP 搭建</div>
+</div>
+</div>
 
 </div>
 
-<div v-click class="mt-2 p-2 rounded bg-gray-500/5 text-sm opacity-70">
+<div v-click class="mt-4 p-2 rounded bg-gray-500/5 text-sm opacity-70">
 <strong>核心趋势：</strong>工具从"代码补全"进化到"自主 Agent" — 不只是建议代码，而是能理解需求、读写文件、执行命令、自动调试
 </div>
 
@@ -93,63 +121,59 @@ graph TB
 
 # CLI Agent 工具：Claude Code vs OpenCode
 
-<div class="grid grid-cols-2 gap-6">
+<div class="grid grid-cols-2 gap-6 mt-4" style="grid-template-rows: 1fr auto;">
 
-<div>
+<div v-click style="grid-row: 1;">
 
-### Claude Code
-
-<div class="space-y-3 mt-2">
-<div v-click class="p-3 rounded bg-orange-500/10 border border-orange-500/20">
-<div class="font-bold text-orange-400 mb-1">终端里的 AI 结对编程</div>
-<div class="text-sm opacity-70">直接在命令行中运行，理解整个项目上下文</div>
+<div class="p-4 rounded-lg border border-orange-500/30 bg-orange-500/5 h-full">
+<div class="flex items-center gap-2 mb-3">
+<span class="text-xl">🟠</span>
+<span class="text-lg font-bold text-orange-400">Claude Code</span>
+<span class="text-xs opacity-50">Anthropic</span>
 </div>
-
-<div v-click class="p-3 rounded bg-orange-500/10 border border-orange-500/20">
-<div class="font-bold text-orange-400 mb-1">自主执行 + 完整工作流</div>
-<div class="text-sm opacity-70">读写文件、执行命令、Git 操作、Code Review</div>
-</div>
-
-<div v-click class="p-3 rounded bg-orange-500/10 border border-orange-500/20">
-<div class="font-bold text-orange-400 mb-1">模型支持</div>
-<div class="text-sm opacity-70">原生 Anthropic Claude 系列；通过 CC Switch 可接入 DeepSeek / GLM / MiniMax 等第三方模型</div>
+<div class="text-sm space-y-1.5">
+<div><span class="opacity-50">定位：</span>终端里的 AI 结对编程，理解整个项目上下文</div>
+<div><span class="opacity-50">能力：</span>自主读写文件、执行命令、Git 操作、Code Review</div>
+<div><span class="opacity-50">模型：</span>原生 Claude 系列，可通过 CC Switch 接入第三方模型</div>
+<div><span class="opacity-50">价格：</span>按 Token 计费（Opus $5/$25）或 Max 订阅 $100~200/月</div>
 </div>
 </div>
+
+</div>
+
+<div v-click style="grid-row: 1;">
+
+<div class="p-4 rounded-lg border border-teal-500/30 bg-teal-500/5 h-full">
+<div class="flex items-center gap-2 mb-3">
+<span class="text-xl">🟢</span>
+<span class="text-lg font-bold text-teal-400">OpenCode</span>
+<span class="text-xs opacity-50">开源</span>
+</div>
+<div class="text-sm space-y-1.5">
+<div><span class="opacity-50">定位：</span>开源 AI 编程 Agent，Go 编写，TUI 界面</div>
+<div><span class="opacity-50">能力：</span>多文件编辑、LSP 深度集成、兼容 Tmux/SSH 远程</div>
+<div><span class="opacity-50">模型：</span>自由切换 Claude / GPT / DeepSeek 等任意模型</div>
+<div><span class="opacity-50">价格：</span>开源免费，按各模型 API 计费</div>
+</div>
+</div>
+
+</div>
+
+<div v-click style="grid-column: 1; grid-row: 2;">
 
 ```bash
-# 典型用法
-claude "添加用户登录页面，含表单验证"
-claude "运行测试并修复所有失败用例"
-claude "review 这个 PR 并给出建议"
+claude "添加用户登录页面"
+claude "运行测试并修复失败用例"
+claude "review 这个 PR"
 ```
 
 </div>
 
-<div>
-
-### OpenCode
-
-<div class="space-y-3 mt-2">
-<div v-click class="p-3 rounded bg-teal-500/10 border border-teal-500/20">
-<div class="font-bold text-teal-400 mb-1">开源 AI 编程 Agent</div>
-<div class="text-sm opacity-70">Go 编写，TUI 界面，支持终端/桌面/IDE 多端</div>
-</div>
-
-<div v-click class="p-3 rounded bg-teal-500/10 border border-teal-500/20">
-<div class="font-bold text-teal-400 mb-1">模型自由切换</div>
-<div class="text-sm opacity-70">支持 Claude / GPT / Gemini / DeepSeek 等任意模型，含免费额度</div>
-</div>
-
-<div v-click class="p-3 rounded bg-teal-500/10 border border-teal-500/20">
-<div class="font-bold text-teal-400 mb-1">LSP 深度集成</div>
-<div class="text-sm opacity-70">兼容 Tmux/SSH，可在远程服务器甚至手机端使用</div>
-</div>
-</div>
+<div v-click style="grid-column: 2; grid-row: 2;">
 
 ```bash
-# 典型用法
-opencode "重构这个模块的错误处理"
-opencode "为这个函数编写单元测试"
+opencode "重构错误处理模块"
+opencode "编写单元测试"
 opencode "分析项目架构"
 ```
 
@@ -157,86 +181,7 @@ opencode "分析项目架构"
 
 </div>
 
-<div v-click class="mt-4 p-3 rounded bg-gray-500/5 text-sm opacity-70">
-<strong>对比：</strong>Claude Code 编码能力最强，原生绑定 Claude 但可通过 CC Switch 接入第三方模型；OpenCode 开源免费、模型可选、LSP 集成深，是国产模型用户的理想选择
+<div v-click class="mt-4 p-3 rounded bg-yellow-500/10 border border-yellow-500/20 text-sm">
+💡 <strong>选型建议：</strong>追求编码能力 → <strong>Claude Code</strong>（最强）；搭配国产模型 / 开源方案 → <strong>OpenCode</strong>（免费 + 模型可选）
 </div>
 
----
-
-# 工具能力对比
-
-<div class="mt-6 text-sm">
-
-| 能力 | Cursor | Copilot | Windsurf | Claude Code | OpenCode |
-|------|:------:|:-------:|:--------:|:-----------:|:--------:|
-| 代码补全 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | — | — |
-| 对话式编码 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| 多文件编辑 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
-| 执行终端命令 | ⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
-| 自动修复错误 | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
-| Git/PR 操作 | ⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
-| 项目级理解 | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
-| 模型自由度 | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐（+CC Switch） | ⭐⭐⭐⭐⭐ |
-| 开源 | ❌ | ❌ | ❌ | ❌ | ✅ |
-| 上手难度 | 低 | 低 | 低 | 中 | 低 |
-
-</div>
-
-<div v-click class="mt-6 p-3 rounded bg-yellow-500/10 border border-yellow-500/20 text-sm">
-💡 <strong>关键发现：</strong>IDE 工具（Cursor/Copilot）适合日常编码辅助；CLI Agent（Claude Code/OpenCode）适合复杂多步骤任务；OpenCode 开源免费 + 模型可选，特别适合搭配国产模型使用
-</div>
-
----
-
-# 团队落地建议
-
-<div class="mt-4 grid grid-cols-2 gap-4">
-
-<div>
-
-### 推荐工具组合
-
-<div v-click class="p-2 rounded bg-blue-500/10 border border-blue-500/20 mb-2">
-<div class="font-bold text-blue-400 text-sm">日常编码</div>
-<div class="text-xs opacity-70">Cursor（主力IDE）或 Copilot（VS Code 插件）— 行内补全 + 对话</div>
-</div>
-
-<div v-click class="p-2 rounded bg-green-500/10 border border-green-500/20 mb-2">
-<div class="font-bold text-green-400 text-sm">复杂任务</div>
-<div class="text-xs opacity-70">Claude Code（编码最强）或 OpenCode（开源免费 + 国产模型）— 重构、Bug 修复、项目分析</div>
-</div>
-
-<div v-click class="p-2 rounded bg-purple-500/10 border border-purple-500/20">
-<div class="font-bold text-purple-400 text-sm">代码审查</div>
-<div class="text-xs opacity-70">Claude Code Review / CodeRabbit — 自动 PR Review</div>
-</div>
-
-</div>
-
-<div>
-
-### 效率提升路径
-
-<div v-click class="mb-2">
-<div class="font-bold text-sm">Phase 1 — 体验期（1-2 周）</div>
-<div class="text-xs opacity-70">安装 Cursor，用 Tab 补全和 Chat 日常编码</div>
-</div>
-
-<div v-click class="mb-2">
-<div class="font-bold text-sm">Phase 2 — 进阶期（2-4 周）</div>
-<div class="text-xs opacity-70">学习 Prompt 技巧，使用 Agent 模式处理复杂需求</div>
-</div>
-
-<div v-click class="mb-2">
-<div class="font-bold text-sm">Phase 3 — 深度期（1-2 月）</div>
-<div class="text-xs opacity-70">引入 Claude Code，建立团队 CLAUDE.md 统一上下文</div>
-</div>
-
-<div v-click class="mb-2">
-<div class="font-bold text-sm">Phase 4 — 规模化</div>
-<div class="text-xs opacity-70">自动化 PR Review、CI 集成、效率数据度量</div>
-</div>
-
-</div>
-
-</div>

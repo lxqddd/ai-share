@@ -8,7 +8,7 @@ Claude Code 使用技巧
 
 ---
 
-# Claude Code 是什么？
+# Claude Code — 你的 AI 结对程序员
 
 <div class="grid grid-cols-2 gap-8 mt-6">
 
@@ -16,26 +16,26 @@ Claude Code 使用技巧
 
 ### 定位
 
-<div class="mt-4 space-y-4">
-<div v-click class="p-3 rounded bg-orange-500/10 border border-orange-500/20">
-<div class="font-bold text-orange-400 mb-1">终端里的 AI 编程助手</div>
+<div class="mt-4 space-y-3">
+<div v-click class="p-3 rounded-lg border border-orange-500/30 bg-orange-500/5">
+<div class="font-bold text-orange-400 mb-1">📁 终端里的 AI 编程助手</div>
 <div class="text-sm opacity-70">直接在项目目录中运行，理解完整项目上下文</div>
 </div>
 
-<div v-click class="p-3 rounded bg-orange-500/10 border border-orange-500/20">
-<div class="font-bold text-orange-400 mb-1">Agentic Loop</div>
+<div v-click class="p-3 rounded-lg border border-orange-500/30 bg-orange-500/5">
+<div class="font-bold text-orange-400 mb-1">🔄 Agentic Loop</div>
 <div class="text-sm opacity-70">收集上下文 → 执行操作 → 验证结果 → 自动迭代</div>
 </div>
 
-<div v-click class="p-3 rounded bg-orange-500/10 border border-orange-500/20">
-<div class="font-bold text-orange-400 mb-1">不只是对话 — 自主行动</div>
+<div v-click class="p-3 rounded-lg border border-orange-500/30 bg-orange-500/5">
+<div class="font-bold text-orange-400 mb-1">⚡ 不只是对话 — 自主行动</div>
 <div class="text-sm opacity-70">读写文件、运行命令、Git 操作、创建 PR、执行测试</div>
 </div>
 </div>
 
 </div>
 
-<div>
+<div v-click>
 
 ### 安装与启动
 
@@ -53,12 +53,9 @@ claude --continue            # 继续上次对话
 claude --resume              # 恢复历史会话
 ```
 
-<div v-click class="mt-4 p-3 rounded bg-gray-500/5 text-sm opacity-70">
+<div v-click class="p-3 rounded-lg border border-gray-500/30 bg-gray-500/5 text-sm opacity-70">
 <strong>计费：</strong>使用 Anthropic API 额度，Sonnet 性价比最高；也可通过 Claude Max 订阅使用
-</div>
-
-<div v-click class="mt-3 p-3 rounded bg-emerald-500/10 border border-emerald-500/20 text-sm">
-<strong>第三方模型：</strong>通过 CC Switch 等工具，可切换到 DeepSeek / GLM / MiniMax 等国产模型，大幅降低使用成本
+<br>💡 <strong>第三方模型：</strong>通过 CC Switch，可切换到 DeepSeek / GLM / MiniMax 等国产模型，大幅降低使用成本
 </div>
 
 </div>
@@ -114,7 +111,7 @@ pnpm test     # 运行测试
 <div class="p-3 rounded bg-green-500/10 border border-green-500/20">
 <div class="font-bold text-green-400">最佳实践</div>
 <ul class="text-sm opacity-70 mt-1 space-y-1">
-<li>控制在 60 行以内，简洁明了</li>
+<li>控制在 200 行以内，简洁明了</li>
 <li>写清楚项目架构和常用命令</li>
 <li>标注代码规范和约定</li>
 <li>不用写显而易见的规则</li>
@@ -194,7 +191,12 @@ pnpm test     # 运行测试
 
 <div class="grid grid-cols-2 gap-6 mt-4">
 
-<div>
+<div v-click>
+
+<div class="p-3 rounded-lg border border-teal-500/30 bg-teal-500/5 mb-4">
+<div class="font-bold text-teal-400 mb-1">什么是 Skills？</div>
+<div class="text-sm opacity-70">用 Markdown 编写的可复用指令包，可跨项目共享，支持按关键词自动触发</div>
+</div>
 
 **目录结构：**
 
@@ -205,6 +207,10 @@ pnpm test     # 运行测试
       ├── templates/      # 模板文件（可选）
       └── references/     # 参考文档（可选）
 ```
+
+</div>
+
+<div v-click>
 
 **SKILL.md 格式：**
 
@@ -222,21 +228,7 @@ triggers:
 具体的使用步骤和规则...
 ```
 
-</div>
-
-<div v-click class="space-y-4">
-
-<div class="p-3 rounded bg-teal-500/10 border border-teal-500/20">
-<div class="font-bold text-teal-400 mb-1">Skills 的优势</div>
-<ul class="text-sm opacity-70 space-y-1">
-<li>可跨项目复用</li>
-<li>支持自动触发（按关键词匹配）</li>
-<li>可打包为插件分享给团队</li>
-<li>社区有大量现成 Skills 可安装</li>
-</ul>
-</div>
-
-<div class="p-3 rounded bg-gray-500/5 text-sm">
+<div class="mt-3 p-3 rounded-lg border border-gray-500/30 bg-gray-500/5 text-sm">
 <strong>示例：</strong>Slidev 技能（本项目中已有）— 自动识别 .md 文件，提供 Slidev 语法参考
 </div>
 
@@ -313,27 +305,21 @@ triggers:
 
 # 自定义命令（Slash Commands）
 
-<div class="mt-6">
-
-### 用 Markdown 文件创建团队专属命令
+<div class="mt-4 text-sm opacity-50">用 Markdown 文件创建团队专属命令</div>
 
 <div class="grid grid-cols-2 gap-6 mt-4">
 
-<div>
+<div v-click>
 
 **目录结构：**
 
 ```
-.claude/commands/         # 项目级命令（团队共享）
-├── review.md             # /review (project)
-├── test.md               # /test (project)
+.claude/commands/         # 项目级（团队共享）
+├── review.md             # /review
+├── test.md               # /test
 └── ci/
-    ├── build.md          # /ci:build (project:ci)
-    └── lint.md           # /ci:lint (project:ci)
-
-~/.claude/commands/       # 个人级命令（全局可用）
-├── daily.md              # /daily (user)
-└── commit.md             # /commit (user)
+    ├── build.md          # /ci:build
+    └── lint.md           # /ci:lint
 ```
 
 **命令文件格式（review.md）：**
@@ -346,45 +332,32 @@ allowed-tools: Read, Bash(git:*)
 
 请 review 当前 git diff 的所有变更，
 重点关注：$ARGUMENTS
-
-检查项：
-1. 代码逻辑正确性
-2. 潜在安全风险
-3. 性能问题
 ```
 
 </div>
 
-<div v-click class="space-y-4">
+<div v-click>
 
-<div class="p-3 rounded bg-indigo-500/10 border border-indigo-500/20">
-<div class="font-bold text-indigo-400 mb-1">命令中的特殊语法</div>
-<ul class="text-sm opacity-70 space-y-1">
-<li><code>$ARGUMENTS</code> — 引用用户输入的参数</li>
-<li><code>@path/to/file</code> — 引用项目文件</li>
-<li><code>!`command`</code> — 嵌入 bash 命令输出</li>
-</ul>
+<div class="p-3 rounded-lg border border-indigo-500/30 bg-indigo-500/5 mb-3">
+<div class="font-bold text-indigo-400 mb-1">特殊语法</div>
+<div class="text-sm opacity-70 space-y-1">
+<div><code>$ARGUMENTS</code> — 引用用户输入的参数</div>
+<div><code>@path/to/file</code> — 引用项目文件</div>
+<div><code>!`command`</code> — 嵌入 bash 命令输出</div>
+</div>
 </div>
 
-<div class="p-3 rounded bg-green-500/10 border border-green-500/20">
+<div class="p-3 rounded-lg border border-green-500/30 bg-green-500/5 mb-3">
 <div class="font-bold text-green-400 mb-1">使用方式</div>
 <div class="text-sm opacity-70">
-在 Claude Code 中直接输入命令名即可调用：
-<br><code>/review</code> · <code>/test</code> · <code>/ci:build</code>
+<code>/review</code> · <code>/test</code> · <code>/ci:build</code>
 <br>支持传参：<code>/review 安全性和性能</code>
 </div>
 </div>
 
-<div class="p-3 rounded bg-amber-500/10 border border-amber-500/20">
+<div class="p-3 rounded-lg border border-amber-500/30 bg-amber-500/5">
 <div class="font-bold text-amber-400 mb-1">适用场景</div>
-<ul class="text-sm opacity-70 space-y-1">
-<li>团队统一的 Code Review 流程</li>
-<li>标准化的提交信息生成</li>
-<li>项目特定的构建/部署检查</li>
-<li>常用的分析/重构任务</li>
-</ul>
-</div>
-
+<div class="text-sm opacity-70">团队统一 Code Review、标准化提交信息、构建/部署检查、常用分析/重构任务</div>
 </div>
 
 </div>
@@ -395,24 +368,16 @@ allowed-tools: Read, Bash(git:*)
 
 # MCP — 让 AI 连接一切工具
 
-<div class="mt-6">
-
-### Model Context Protocol（模型上下文协议）
+<div class="mt-4 text-sm opacity-50">Model Context Protocol · Anthropic 推出的开放协议，标准化 AI 与外部工具的通信</div>
 
 <div class="grid grid-cols-2 gap-6 mt-4">
 
-<div>
+<div v-click>
 
-**MCP 是什么？**
-
-<div v-click class="p-3 rounded bg-blue-500/10 border border-blue-500/20 mb-4">
+<div class="p-3 rounded-lg border border-blue-500/30 bg-blue-500/5 mb-4">
 <div class="font-bold text-blue-400 mb-1">AI 的 USB-C 接口</div>
-<div class="text-sm opacity-70">
-Anthropic 于 2024.11 推出的开放协议，标准化 AI 模型与外部工具/数据源之间的通信方式。一个协议连接所有服务，无需为每个工具单独写接口
+<div class="text-sm opacity-70">一个协议连接所有服务，无需为每个工具单独写接口</div>
 </div>
-</div>
-
-**工作原理：**
 
 ```mermaid {scale: 0.45}
 graph LR
@@ -427,26 +392,20 @@ graph LR
 
 </div>
 
-<div v-click class="space-y-4">
+<div v-click>
 
-<div class="p-3 rounded bg-green-500/10 border border-green-500/20">
+<div class="p-3 rounded-lg border border-green-500/30 bg-green-500/5 mb-3">
 <div class="font-bold text-green-400 mb-1">核心能力</div>
-<ul class="text-sm opacity-70 space-y-1">
-<li><strong>Tools</strong> — 调用外部工具（查询数据库、操作文件）</li>
-<li><strong>Resources</strong> — 读取外部数据（API、文档、代码）</li>
-<li><strong>Prompts</strong> — 预定义的提示词模板</li>
-</ul>
+<div class="text-sm opacity-70 space-y-1">
+<div><strong>Tools</strong> — 调用外部工具（查询数据库、操作文件）</div>
+<div><strong>Resources</strong> — 读取外部数据（API、文档、代码）</div>
+<div><strong>Prompts</strong> — 预定义的提示词模板</div>
+</div>
 </div>
 
-<div class="p-3 rounded bg-purple-500/10 border border-purple-500/20">
+<div class="p-3 rounded-lg border border-purple-500/30 bg-purple-500/5">
 <div class="font-bold text-purple-400 mb-1">为什么重要？</div>
-<ul class="text-sm opacity-70 space-y-1">
-<li>AI 编码工具从"只能读写代码"进化到"能操作一切"</li>
-<li>社区已有数千个 MCP Server 可直接使用</li>
-<li>Claude Code、Cursor、Windsurf、OpenCode 均已支持</li>
-</ul>
-</div>
-
+<div class="text-sm opacity-70">AI 从"只能读写代码"进化到"能操作一切"；社区已有数千个 MCP Server；Claude Code、Cursor、Windsurf、OpenCode 均已支持</div>
 </div>
 
 </div>
@@ -457,32 +416,20 @@ graph LR
 
 # MCP 实战案例
 
-<div class="mt-6">
-
-### 两个代表性 MCP Server
-
 <div class="grid grid-cols-2 gap-6 mt-4">
 
-<div>
+<div v-click>
 
-**Figma MCP — 设计稿直接生成代码**
-
-<div class="mt-3 space-y-3">
-<div class="p-3 rounded bg-blue-500/10 border border-blue-500/20">
-<div class="font-bold text-blue-400 mb-1">核心功能</div>
-<ul class="text-sm opacity-70 space-y-1">
-<li><code>get_figma_data</code> — 读取设计稿的布局、样式、组件</li>
-<li><code>download_figma_images</code> — 下载设计稿中的图片/图标资源</li>
-<li>自动提取 Design Token（颜色、字号、间距）</li>
-</ul>
+<div class="p-3 rounded-lg border border-blue-500/30 bg-blue-500/5 mb-3">
+<div class="font-bold text-blue-400 mb-1">🎨 Figma MCP</div>
+<div class="text-sm opacity-70">设计稿直接生成代码</div>
+<div class="text-xs opacity-50 mt-1">get_figma_data · download_figma_images · 自动提取 Design Token</div>
 </div>
 
-<div class="p-3 rounded bg-blue-500/5 text-sm">
-<strong>工作流：</strong>粘贴 Figma 链接 → Claude 读取设计结构 → 生成像素级精确的前端代码
-</div>
+**工作流：**粘贴 Figma 链接 → 读取设计结构 → 生成像素级精确的前端代码
 
 ```json
-// .claude/settings.json 配置
+// .claude/settings.json
 {
   "mcpServers": {
     "figma": {
@@ -495,29 +442,18 @@ graph LR
 
 </div>
 
+<div v-click>
+
+<div class="p-3 rounded-lg border border-cyan-500/30 bg-cyan-500/5 mb-3">
+<div class="font-bold text-cyan-400 mb-1">👁️ 智谱视觉 MCP</div>
+<div class="text-sm opacity-70">给 AI 装上"眼睛"</div>
+<div class="text-xs opacity-50 mt-1">图像理解 · UI Diff · UI 还原 · 视频关键帧</div>
 </div>
 
-<div>
-
-**智谱视觉 MCP — 给 AI 装上"眼睛"**
-
-<div class="mt-3 space-y-3">
-<div class="p-3 rounded bg-cyan-500/10 border border-cyan-500/20">
-<div class="font-bold text-cyan-400 mb-1">核心功能</div>
-<ul class="text-sm opacity-70 space-y-1">
-<li><code>image_analysis</code> — 通用图像理解（截图、设计稿）</li>
-<li><strong>UI Diff</strong> — 对比两张 UI 截图，识别视觉差异</li>
-<li><strong>UI 还原</strong> — 从截图直接生成前端代码</li>
-<li>视频关键帧提取与理解</li>
-</ul>
-</div>
-
-<div class="p-3 rounded bg-cyan-500/5 text-sm">
-<strong>工作流：</strong>截图/设计稿 → 视觉分析 → 生成代码 → UI Diff 对比验证
-</div>
+**工作流：**截图/设计稿 → 视觉分析 → 生成代码 → UI Diff 对比验证
 
 ```json
-// .claude/settings.json 配置
+// .claude/settings.json
 {
   "mcpServers": {
     "vision-mcp-server": {
@@ -532,90 +468,52 @@ graph LR
 
 </div>
 
-</div>
-
-<div v-click class="mt-4 p-3 rounded bg-yellow-500/10 border border-yellow-500/20 text-sm">
+<div v-click class="mt-4 p-3 rounded-lg border border-yellow-500/30 bg-yellow-500/5 text-sm">
 💡 <strong>设计到代码的完整闭环：</strong>Figma MCP（读设计稿）+ 智谱视觉 MCP（截图对比验证）= AI 完成从设计到代码再到质量验收的全流程
-</div>
-
 </div>
 
 ---
 
 # CC Switch — 模型一键切换
 
-<div class="mt-6">
-
-### Claude Code 的模型"遥控器"
+<div class="mt-4 text-sm opacity-50">Claude Code 的模型"遥控器" · 官方额度用完 → 一键切到 DeepSeek / GLM / MiniMax 继续编码</div>
 
 <div class="grid grid-cols-2 gap-6 mt-4">
 
-<div>
+<div v-click>
 
-**桌面版（推荐）**
-
-<div class="mt-3 space-y-3">
-<div class="p-3 rounded bg-emerald-500/10 border border-emerald-500/20">
-<div class="font-bold text-emerald-400 mb-1">CC Switch 桌面应用</div>
-<div class="text-sm opacity-70">基于 Tauri + Rust，GUI 一键切换模型供应商</div>
+<div class="p-3 rounded-lg border border-emerald-500/30 bg-emerald-500/5 mb-3">
+<div class="font-bold text-emerald-400 mb-1">🖥️ CC Switch 桌面版（推荐）</div>
+<div class="text-sm opacity-70">Tauri + Rust，GUI 一键切换模型供应商</div>
 </div>
 
 <div class="text-sm space-y-2">
-<div><strong>支持的编码工具：</strong></div>
-<div class="opacity-70">Claude Code · Codex CLI · Gemini CLI · OpenCode · OpenClaw</div>
-</div>
-
-<div class="text-sm space-y-2">
+<div><strong>支持工具：</strong><span class="opacity-70">Claude Code · Codex CLI · Gemini CLI · OpenCode</span></div>
 <div><strong>核心能力：</strong></div>
 <ul class="opacity-70 space-y-1">
 <li>内置 50+ 中转节点预设，开箱即用</li>
 <li>支持自定义节点（Kimi、DeepSeek、GLM 等）</li>
-<li>本地代理，切换无需重启 Claude Code</li>
-<li>统一管理多个工具的模型配置</li>
+<li>本地代理，切换无需重启</li>
 </ul>
 </div>
 
-<div class="p-3 rounded bg-emerald-500/5 text-sm">
-<strong>典型场景：</strong>官方额度用完 → 一键切到 DeepSeek / GLM 继续编码
 </div>
 
-</div>
+<div v-click>
 
-</div>
-
-<div>
-
-**CLI 版（轻量替代）**
-
-<div class="mt-3 space-y-3">
-<div class="p-3 rounded bg-violet-500/10 border border-violet-500/20">
-<div class="font-bold text-violet-400 mb-1">cc-model-switcher</div>
-<div class="text-sm opacity-70">Node.js CLI 工具，命令行快速切换模型</div>
+<div class="p-3 rounded-lg border border-violet-500/30 bg-violet-500/5 mb-3">
+<div class="font-bold text-violet-400 mb-1">⌨️ cc-model-switcher（CLI 版）</div>
+<div class="text-sm opacity-70">Node.js CLI 工具，命令行快速切换</div>
 </div>
 
 ```bash
-# 安装
 npm install -g cc-model-switcher
 
-# 使用
-cc_switch              # 默认 Kimi 模型
+cc_switch              # 默认 Kimi
 cc_switch deepseek     # 切换到 DeepSeek
 cc_switch glm46        # 切换到 GLM-4.6
-cc_switch --list       # 查看所有可用模型
-cc_switch -i           # 交互式选择
+cc_switch --list       # 查看所有模型
 ```
-
-<div class="p-3 rounded bg-violet-500/5 text-sm">
-<strong>配置文件：</strong><code>~/.models.json</code> — 可自定义添加任意模型供应商的 API Key 和 Base URL
-</div>
-
-<div class="p-3 rounded bg-violet-500/5 text-sm">
-<strong>工作原理：</strong>通过设置 <code>ANTHROPIC_BASE_URL</code> 和 <code>ANTHROPIC_AUTH_TOKEN</code> 环境变量，将 Claude Code 的请求重定向到目标模型 API
-</div>
-
-</div>
-
-</div>
 
 </div>
 

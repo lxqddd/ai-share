@@ -69,9 +69,9 @@ layout: section
 <span class="font-bold">DeepSeek</span>
 </div>
 <div class="text-sm space-y-1">
-<div><span class="opacity-50">旗舰：</span>DeepSeek V4</div>
-<div><span class="opacity-50">推理：</span>DeepSeek R2</div>
-<div class="mt-2 text-xs opacity-50">能力比肩 GPT-5，⚠️ V4 已闭源</div>
+<div><span class="opacity-50">旗舰：</span>DeepSeek V4 Pro</div>
+<div><span class="opacity-50">轻量：</span>DeepSeek V4 Flash</div>
+<div class="mt-2 text-xs opacity-50">开源 SOTA，1M 上下文，Agent 编码领先</div>
 </div>
 </div>
 
@@ -81,9 +81,9 @@ layout: section
 <span class="font-bold">通义千问 Qwen</span>
 </div>
 <div class="text-sm space-y-1">
-<div><span class="opacity-50">旗舰：</span>Qwen 3.5</div>
-<div><span class="opacity-50">特点：</span>千亿参数，混合推理</div>
-<div class="mt-2 text-xs opacity-50">系列最全，多语言能力突出</div>
+<div><span class="opacity-50">旗舰：</span>Qwen3.6-Plus</div>
+<div><span class="opacity-50">特点：</span>编程接近 Claude Opus 4.5</div>
+<div class="mt-2 text-xs opacity-50">1M 上下文，Agent 能力大幅增强</div>
 </div>
 </div>
 
@@ -94,8 +94,8 @@ layout: section
 </div>
 <div class="text-sm space-y-1">
 <div><span class="opacity-50">旗舰：</span>GLM-5.1</div>
-<div><span class="opacity-50">特点：</span>安全能力突出</div>
-<div class="mt-2 text-xs opacity-50">中文理解优秀，⚠️ 已闭源</div>
+<div><span class="opacity-50">特点：</span>整体对齐 Claude Opus 4.6</div>
+<div class="mt-2 text-xs opacity-50">长程自主执行 8h+，Coding Agent 理想基座</div>
 </div>
 </div>
 
@@ -118,15 +118,15 @@ layout: section
 </div>
 <div class="text-sm space-y-1">
 <div><span class="opacity-50">旗舰：</span>MiniMax M2.7</div>
-<div><span class="opacity-50">特点：</span>400 万超长上下文</div>
-<div class="mt-2 text-xs opacity-50">2026.4 开源，编码+Agent 能力跃升</div>
+<div><span class="opacity-50">特点：</span>SWE-Pro 56%，接近 Opus 水平</div>
+<div class="mt-2 text-xs opacity-50">原生 Agent Teams，模型自我进化能力</div>
 </div>
 </div>
 
 </div>
 
 <div v-click class="mt-4 p-3 rounded bg-gray-500/5 text-sm opacity-70">
-<strong>趋势：</strong>2026 春节成为"模型春节档"；MiniMax M2.5 曾连续一个月霸榜全球大模型周调用量第一（OpenRouter）；多家国产模型最新版转向闭源，开源红利窗口收窄
+<strong>趋势：</strong>2026 春节成为"模型春节档"；MiniMax M2.7 SWE-Pro 56% 追平 GPT-5.3-Codex，VIBE-Pro 55.6% 几乎与 Opus 4.6 持平；国产模型在真实软件工程能力上快速追赶
 </div>
 
 ---
@@ -134,61 +134,24 @@ layout: section
 # 编码能力对比（Arena AI WebDev 排行榜）
 
 <div class="text-xs opacity-50 mb-2">
-数据来源：<a href="https://arena.ai/leaderboard/code/webdev" target="_blank">Arena AI WebDev Leaderboard</a> · 基于真实 Web 开发任务的盲评投票 · 2026.05.12
+数据来源：<a href="https://arena.ai/leaderboard/code/webdev" target="_blank">Arena AI WebDev Leaderboard</a> · 基于真实 Web 开发任务的盲评投票 · 2026.05
 </div>
 
-<div class="mt-4 text-sm">
+<div class="mt-2 text-sm">
 
 | 排名 | 模型 | ELO | 厂商 |
 |:---:|------|:---:|------|
-| 1 | Claude Opus 4.7 (thinking) | 1570 | Anthropic |
-| 2 | Claude Opus 4.7 | 1560 | Anthropic |
-| 3 | Claude Opus 4.6 (thinking) | 1549 | Anthropic |
-| 4 | Claude Opus 4.6 | 1544 | Anthropic |
-| 5 | **GLM-5.1** | **1531** | 智谱 |
-| 6 | Claude Sonnet 4.6 | 1524 | Anthropic |
-| 7 | **Kimi K2.6** | **1523** | 月之暗面 |
-| 8 | Muse Spark | 1509 | Meta |
-| 9 | GPT-5.5 (codex-harness) | 1491 | OpenAI |
-| 10 | **Qwen 3.6 Max** | **1478** | 阿里 |
-| 11 | **MiMo V2.5 Pro** | **1472** | 小米 |
-| 12 | **Qwen 3.6 Plus** | **1463** | 阿里 |
-| 13 | GPT-5.4 (codex-harness) | 1457 | OpenAI |
-| 14 | **DeepSeek V4 Pro** | **1454** | DeepSeek |
-| 15 | Gemini 3.1 Pro Preview | 1452 | Google |
+| 1 | Claude Opus 4.7 (thinking) | 1567 | Anthropic |
+| 2 | **GLM-5.1** | **1532** | 智谱 |
+| 3 | **Kimi K2.6** | **1519** | 月之暗面 |
+| 4 | Mistral Spark | 1509 | Mistral AI |
+| 5 | GPT-5.5 (codex-harness) | 1501 | OpenAI |
+| 6 | **Qwen 3.6 Max** | **1491** | 阿里 |
+| 7 | **MiMo V2.5 Pro** | **1472** | 小米 |
+| 8 | **DeepSeek V4 Pro** (thinking) | **1458** | DeepSeek |
 
 </div>
 
-<div v-click class="mt-4 p-3 rounded bg-yellow-500/10 border border-yellow-500/20 text-sm">
-💡 <strong>关键发现：</strong>Claude 在 WebDev 编码中占据绝对优势，包揽前 4 名；GLM-5.1（1531）超越 GPT-5.5（1491）位列第 5，是排名最高的国产模型；前 15 中国产模型占据 7 席（GLM、Kimi、Qwen ×2、MiMo、DeepSeek）
-</div>
-
----
-
-# API 定价对比（参考）
-
-<div class="mt-6">
-
-| 模型 | 输入价格 | 输出价格 | 特点 |
-|------|---------|---------|------|
-| GPT-5.5 Pro | ~$10 / 1M tokens | ~$30 / 1M tokens | 旗舰级，能力最强 |
-| Claude Opus 4.7 | ~$15 / 1M tokens | ~$75 / 1M tokens | 编码质量顶尖 |
-| Claude Sonnet 4.6 | ~$3 / 1M tokens | ~$15 / 1M tokens | 编码性价比之选 |
-| Gemini 3.1 Pro | ~$2.5 / 1M tokens | ~$15 / 1M tokens | 长上下文有优势 |
-| **DeepSeek V4** | **~¥4 / 1M tokens** | **~¥16 / 1M tokens** | 能力强，价格低 |
-| **MiniMax M2.7** | **~¥1 / 1M tokens** | **~¥8 / 1M tokens** | 4M 超长上下文，开源 |
-| **Qwen 3.5** | **~¥2 / 1M tokens** | **~¥8 / 1M tokens** | 可私有化部署 |
-| **豆包 Seed 2.0** | **~¥0.8 / 1M tokens** | **~¥2 / 1M tokens** | **最低价位** |
-
-</div>
-
-<div v-click class="mt-6 p-3 rounded bg-green-500/10 border border-green-500/20 text-sm">
-💰 <strong>成本启示：</strong>国内模型 API 价格普遍为海外旗舰的 <strong>1/10 ~ 1/20</strong>；对于高频调用场景（代码补全、批量 Review、Agent 工作流），成本优势是决定性的
-</div>
-
-<div v-click class="mt-4 text-xs opacity-50">
-注：价格为大致参考，各厂商会不定期调整，具体以官方定价为准
-</div>
 
 ---
 layout: center
@@ -219,7 +182,7 @@ class: text-center
 </div>
 <div class="text-sm space-y-1">
 <div><span class="opacity-50">代表：</span>GLM-5.1（#5）/ GLM-4.7（#20）</div>
-<div><span class="opacity-50">优势：</span>国产模型排名最高，超越 GPT-5.5；Coding Plan 含视觉/搜索 MCP</div>
+<div><span class="opacity-50">优势：</span>国产模型排名最高，整体对齐 Claude Opus 4.6；长程任务 8h+ 持续自主执行</div>
 <div><span class="opacity-50">适合：</span>国内团队首选，Claude Code 平替</div>
 <div><span class="opacity-50">价格：</span>Coding Plan ¥49~469/月，国内直连</div>
 </div>
@@ -232,9 +195,9 @@ class: text-center
 </div>
 <div class="text-sm space-y-1">
 <div><span class="opacity-50">代表：</span>MiniMax M2.7</div>
-<div><span class="opacity-50">优势：</span>4M tokens 超长上下文，一次读入整个项目</div>
-<div><span class="opacity-50">适合：</span>大型代码库分析、长文档处理、全项目重构</div>
-<div><span class="opacity-50">价格：</span>¥1/¥8 每 1M tokens，开源可私有化</div>
+<div><span class="opacity-50">优势：</span>SWE-Pro 56% 追平 GPT-5.3-Codex，原生 Agent Teams 多智能体协作</div>
+<div><span class="opacity-50">适合：</span>真实软件工程、端到端项目交付、Agent 协作开发</div>
+<div><span class="opacity-50">价格：</span>Coding Plan ¥29~899/月，开源可私有化</div>
 </div>
 </div>
 
@@ -244,10 +207,10 @@ class: text-center
 <span class="text-xs opacity-50">阿里</span>
 </div>
 <div class="text-sm space-y-1">
-<div><span class="opacity-50">代表：</span>Qwen 3.6 Max（#10）/ Qwen 3.5</div>
-<div><span class="opacity-50">优势：</span>系列最全，多语言能力强，仍有开源权重</div>
-<div><span class="opacity-50">适合：</span>私有化部署、数据敏感场景、多语言项目</div>
-<div><span class="opacity-50">价格：</span>¥2/¥8 每 1M tokens，可本地部署</div>
+<div><span class="opacity-50">代表：</span>Qwen3.6-Plus / Qwen3.6 Max（#10）</div>
+<div><span class="opacity-50">优势：</span>中国最强编程模型，1M 上下文，系列最全</div>
+<div><span class="opacity-50">适合：</span>编程开发、Agent 工作流、私有化部署</div>
+<div><span class="opacity-50">价格：</span>Coding Plan Lite ¥40/月起，Pro ¥200/月</div>
 </div>
 </div>
 
