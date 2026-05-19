@@ -77,7 +77,7 @@ AI做自动化测试的一些想法
 
 <div class="p-3 rounded-lg border border-blue-500/30 bg-blue-500/5">
 <div class="font-bold text-blue-400 mb-1">② Claude Code 直接驱动 Playwright CLI</div>
-<div class="text-sm opacity-70">读取用例文档，直接调用 Playwright CLI 执行浏览器操作，无需生成脚本</div>
+<div class="text-sm opacity-70">理解自然语言指令，直接调用 Playwright CLI 执行浏览器操作，无需生成脚本</div>
 </div>
 
 <div class="p-3 rounded-lg border border-purple-500/30 bg-purple-500/5">
@@ -93,10 +93,15 @@ AI做自动化测试的一些想法
 ### 实际操作
 
 ```bash
-# 一条命令，从用例到自动化测试
-claude "读取 tests/test-cases.md 中的测试用例，
-       使用 playwright-cli 逐条执行测试，
-       分析失败用例的原因并自动调整重试"
+# 一条命令，AI 直接驱动浏览器完成测试操作
+claude "使用 playwright-cli 以可见窗口模式（--headed）
+       打开浏览器并打开控制台，访问
+       https://elife-sit-biz.yzlcn.com/，
+       登录账号 XCMT，密码 111111，
+       验证码我来提供。
+       登录后进入店铺下的部门和员工页面，
+       编辑表格第一个员工，在昵称后追加 2 并保存。
+       完成后等待指令。"
 ```
 
 <div class="mt-3 p-3 rounded-lg border border-amber-500/30 bg-amber-500/5">
