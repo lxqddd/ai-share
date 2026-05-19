@@ -218,9 +218,6 @@ pnpm test     # 运行测试
 ---
 name: my-skill
 description: 描述这个技能做什么
-triggers:
-  - "关键词1"
-  - "关键词2"
 ---
 
 # 指令内容
@@ -288,8 +285,8 @@ triggers:
 </div>
 
 <div v-click class="p-3 rounded bg-blue-500/10 border border-blue-500/20 mb-3">
-<div class="font-bold text-blue-400">Shift+Tab — 切换模型</div>
-<div class="text-sm opacity-70">快速在 Sonnet（快）和 Opus（强）间切换</div>
+<div class="font-bold text-blue-400">Shift+Tab — 切换 Plan/Edit 模式</div>
+<div class="text-sm opacity-70">在规划模式和编辑模式之间快速切换</div>
 </div>
 
 <div v-click class="p-3 rounded bg-blue-500/10 border border-blue-500/20">
@@ -328,7 +325,6 @@ triggers:
 ---
 name: Check i18n
 description: 检查新增中文文案是否已补充英文翻译
-tags: i18n, translation
 ---
 
 检查新增中文文案是否已在 en.js 中
