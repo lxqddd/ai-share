@@ -136,3 +136,71 @@ claude "使用 playwright-cli 以可见窗口模式（--headed）
 <div v-click class="mt-6 p-3 rounded-lg border border-green-500/30 bg-green-500/5 text-sm">
 💡 <strong>关键价值：</strong>无需编写和维护自动化脚本，测试同学专注于<strong>用例设计和质量策略</strong>，Claude Code 直接驱动 Playwright CLI 执行测试
 </div>
+
+---
+
+# 总结与展望
+
+<div class="grid grid-cols-2 gap-6 mt-6">
+
+<div>
+
+### 本次分享回顾
+
+<div class="mt-3 space-y-3">
+<div class="p-3 rounded-lg border border-blue-500/30 bg-blue-500/5">
+<div class="font-bold text-blue-400 mb-1">Part 1 - 现状与痛点</div>
+<div class="text-sm opacity-70">开发者日常面临的编码效率瓶颈</div>
+</div>
+
+<div class="p-3 rounded-lg border border-blue-500/30 bg-blue-500/5">
+<div class="font-bold text-blue-400 mb-1">Part 2 - 大模型对比</div>
+<div class="text-sm opacity-70">国内外主流模型编码能力与性价比分析</div>
+</div>
+
+<div class="p-3 rounded-lg border border-blue-500/30 bg-blue-500/5">
+<div class="font-bold text-blue-400 mb-1">Part 3 - 工具与实战</div>
+<div class="text-sm opacity-70">AI 编码工具选型与 Claude Code 使用技巧</div>
+</div>
+
+<div class="p-3 rounded-lg border border-blue-500/30 bg-blue-500/5">
+<div class="font-bold text-blue-400 mb-1">Part 4 - 自动化测试</div>
+<div class="text-sm opacity-70">AI 驱动的无脚本自动化测试方案</div>
+</div>
+</div>
+
+</div>
+
+<div v-click>
+
+### 行动建议
+
+<div class="mt-3 space-y-3">
+<div class="p-3 rounded-lg border border-green-500/30 bg-green-500/5">
+<div class="text-sm opacity-80">✅ 试用 Claude Code，体验 AI 辅助编码的效率提升</div>
+</div>
+
+<div class="p-3 rounded-lg border border-green-500/30 bg-green-500/5">
+<div class="text-sm opacity-80">✅ 从简单场景起步，逐步将 AI 融入日常开发流程</div>
+</div>
+
+<div class="p-3 rounded-lg border border-green-500/30 bg-green-500/5">
+<div class="text-sm opacity-80">✅ 测试团队可先行探索 AI + Playwright 的自动化测试方案</div>
+</div>
+
+<div class="p-3 rounded-lg border border-green-500/30 bg-green-500/5">
+<div class="text-sm opacity-80">✅ 团队内部分享实践经验，共同优化 AI 工具使用方式</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+---
+layout: center
+---
+
+# 感谢聆听
+
+<div class="opacity-50 mt-4 text-sm">欢迎交流与讨论</div>

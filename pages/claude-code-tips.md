@@ -316,23 +316,27 @@ triggers:
 ```
 .claude/commands/         # 项目级（团队共享）
 ├── review.md             # /review
-├── test.md               # /test
+├── check-i18n.md         # /check-i18n
 └── ci/
     ├── build.md          # /ci:build
     └── lint.md           # /ci:lint
 ```
 
-**命令文件格式（review.md）：**
+**真实案例（check-i18n.md）：**
 
 ```markdown
 ---
-description: Code review 当前变更
-allowed-tools: Read, Bash(git:*)
+name: Check i18n
+description: 检查新增中文文案是否已补充英文翻译
+tags: i18n, translation
 ---
 
-请 review 当前 git diff 的所有变更，
-重点关注：$ARGUMENTS
+检查新增中文文案是否已在 en.js 中
+存在对应英文翻译。仅补充缺失文案，
+已存在的不需要处理。
 ```
+
+使用：<code>/check-i18n</code>
 
 </div>
 
