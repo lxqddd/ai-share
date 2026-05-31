@@ -30,7 +30,7 @@ AI 编码工具对比
 <span class="font-bold text-orange-400">CLI Agent</span>
 </div>
 <div class="text-sm space-y-1">
-<div><span class="opacity-50">代表：</span>Claude Code / OpenCode / Codex CLI / Aider</div>
+<div><span class="opacity-50">代表：</span>Claude Code / OpenCode / Codex CLI</div>
 <div><span class="opacity-50">特点：</span>终端运行，自主读写文件、执行命令、自动调试</div>
 <div><span class="opacity-50">适合：</span>复杂多步骤任务、重构、项目级操作</div>
 </div>

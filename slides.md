@@ -1,20 +1,20 @@
 ---
 theme: seriph
-title: AI 编码工具与模型技术分享
+title: AI助力开发效率提升
 info: |
-  AI 工具及模型技术分享 — 提升团队开发效率
+  AI助力开发效率提升 — 编码工具实践与模型技术分享
 class: text-center
 drawings:
   persist: false
 ---
 
-# AI 编码工具与模型技术分享
+# AI助力开发效率提升
 
-提升团队开发效率
+雅致靓商城团队
 
 <div class="pt-12">
   <span class="text-sm opacity-50">
-    2026.05
+    分享人：刘向前 · 2026.06
   </span>
 </div>
 

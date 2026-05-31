@@ -304,14 +304,18 @@ description: 描述这个技能做什么
 
 <div class="mt-4 text-sm opacity-50">用 Markdown 文件创建团队专属命令</div>
 
-<div class="grid grid-cols-2 gap-6 mt-4">
+<div class="grid grid-cols-3 gap-4 mt-4">
 
-<div v-click>
+<div v-click class="col-span-2">
+
+<div class="grid grid-cols-2 gap-4">
+
+<div>
 
 **目录结构：**
 
 ```
-.claude/commands/         # 项目级（团队共享）
+.claude/commands/         # 项目级
 ├── review.md             # /review
 ├── check-i18n.md         # /check-i18n
 └── ci/
@@ -319,12 +323,17 @@ description: 描述这个技能做什么
     └── lint.md           # /ci:lint
 ```
 
+</div>
+
+<div>
+
 **真实案例（check-i18n.md）：**
 
 ```markdown
 ---
 name: Check i18n
-description: 检查新增中文文案是否已补充英文翻译
+description: 检查新增中文文案
+  是否已补充英文翻译
 ---
 
 检查新增中文文案是否已在 en.js 中
@@ -332,32 +341,29 @@ description: 检查新增中文文案是否已补充英文翻译
 已存在的不需要处理。
 ```
 
-使用：<code>/check-i18n</code>
+</div>
 
 </div>
 
-<div v-click>
+</div>
 
-<div class="p-3 rounded-lg border border-indigo-500/30 bg-indigo-500/5 mb-3">
+<div v-click class="space-y-3">
+
+<div class="p-3 rounded-lg border border-indigo-500/30 bg-indigo-500/5">
 <div class="font-bold text-indigo-400 mb-1">特殊语法</div>
 <div class="text-sm opacity-70 space-y-1">
-<div><code>$ARGUMENTS</code> — 引用用户输入的参数</div>
-<div><code>@path/to/file</code> — 引用项目文件</div>
-<div><code>!`command`</code> — 嵌入 bash 命令输出</div>
+<div><code>$ARGUMENTS</code> — 用户输入参数</div>
+<div><code>@path/to/file</code> — 引用文件</div>
+<div><code>!`command`</code> — 嵌入命令输出</div>
 </div>
 </div>
 
-<div class="p-3 rounded-lg border border-green-500/30 bg-green-500/5 mb-3">
+<div class="p-3 rounded-lg border border-green-500/30 bg-green-500/5">
 <div class="font-bold text-green-400 mb-1">使用方式</div>
 <div class="text-sm opacity-70">
-<code>/review</code> · <code>/test</code> · <code>/ci:build</code>
-<br>支持传参：<code>/review 安全性和性能</code>
+<code>/review</code> · <code>/check-i18n</code> · <code>/ci:build</code>
+<br>传参：<code>/review 安全性和性能</code>
 </div>
-</div>
-
-<div class="p-3 rounded-lg border border-amber-500/30 bg-amber-500/5">
-<div class="font-bold text-amber-400 mb-1">适用场景</div>
-<div class="text-sm opacity-70">团队统一 Code Review、标准化提交信息、构建/部署检查、常用分析/重构任务</div>
 </div>
 
 </div>
@@ -517,31 +523,4 @@ cc_switch --list       # 查看所有模型
 
 </div>
 
-</div>
-
----
-
-# 四层配置体系
-
-<div class="mt-8 text-center">
-
-```mermaid {scale: 0.6}
-graph TB
-    A["📄 CLAUDE.md<br/>项目规则与上下文"] --> B["⚡ Hooks<br/>确定性自动化"]
-    A --> C["🔧 Skills<br/>可复用技能包"]
-    A --> E["🔌 MCP Servers<br/>连接外部工具"]
-    B --> D["🤖 完整的<br/>AI 编程工作流"]
-    C --> D
-    E --> D
-    style A fill:#3b82f6,stroke:#3b82f6,color:#fff
-    style B fill:#8b5cf6,stroke:#8b5cf6,color:#fff
-    style C fill:#14b8a6,stroke:#14b8a6,color:#fff
-    style E fill:#ec4899,stroke:#ec4899,color:#fff
-    style D fill:#f59e0b,stroke:#f59e0b,color:#fff
-```
-
-</div>
-
-<div class="mt-4 text-sm opacity-70 text-center">
-<strong>进阶路径：</strong>CLAUDE.md（基础配置）→ Hooks（自动化）→ Skills（技能复用）→ MCP（连接外部工具）→ 组合形成完整工作流
 </div>

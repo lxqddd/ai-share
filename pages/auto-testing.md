@@ -8,57 +8,6 @@ AI做自动化测试的一些想法
 
 ---
 
-# 现状与痛点
-
-<div class="grid grid-cols-2 gap-6 mt-6">
-
-<div v-click>
-
-### 传统自动化测试流程
-
-<div class="mt-3 space-y-3">
-<div class="p-3 rounded-lg border border-gray-500/30 bg-gray-500/5">
-<div class="font-bold text-gray-400 mb-1">1. 测试同学编写用例</div>
-<div class="text-sm opacity-70">Excel / 文档描述测试步骤和预期结果</div>
-</div>
-
-<div class="p-3 rounded-lg border border-gray-500/30 bg-gray-500/5">
-<div class="font-bold text-gray-400 mb-1">2. 开发/测试编写自动化脚本</div>
-<div class="text-sm opacity-70">将用例翻译为 Playwright / Cypress 代码，耗时长</div>
-</div>
-
-<div class="p-3 rounded-lg border border-gray-500/30 bg-gray-500/5">
-<div class="font-bold text-gray-400 mb-1">3. 维护成本高</div>
-<div class="text-sm opacity-70">页面变更导致脚本大面积失效，修复费时</div>
-</div>
-</div>
-
-</div>
-
-<div v-click>
-
-### 核心痛点
-
-<div class="mt-3 space-y-3">
-<div class="p-3 rounded-lg border border-red-500/30 bg-red-500/5">
-<div class="text-sm opacity-80">❌ 用例文档 → 自动化脚本的<strong>翻译成本高</strong>，需要专人维护</div>
-</div>
-
-<div class="p-3 rounded-lg border border-red-500/30 bg-red-500/5">
-<div class="text-sm opacity-80">❌ UI 变更后脚本<strong>大面积失效</strong>，定位元素、时序问题排查耗时</div>
-</div>
-
-<div class="p-3 rounded-lg border border-red-500/30 bg-red-500/5">
-<div class="text-sm opacity-80">❌ 测试同学<strong>不会写代码</strong>，自动化覆盖率难以提升</div>
-</div>
-</div>
-
-</div>
-
-</div>
-
----
-
 # AI 驱动的自动化测试方案
 
 <div class="mt-4 text-sm opacity-50">Claude Code + Playwright CLI · 自然语言用例直接执行</div>
@@ -115,26 +64,6 @@ claude "使用 playwright-cli 以可见窗口模式（--headed）
 
 </div>
 
-</div>
-
----
-
-# 效果对比
-
-<div class="mt-6">
-
-| 维度 | 传统方式 | Claude Code + Playwright |
-|------|---------|------------------------|
-| 用例 → 执行 | 人工编写脚本，1-2 天/批 | AI 直接驱动浏览器执行，分钟级 |
-| 维护成本 | UI 变更后手动修复脚本 | AI 自动调整操作步骤，无需维护脚本 |
-| 门槛 | 需要掌握 Playwright 语法 | 测试同学只需写自然语言用例 |
-| 覆盖率提升 | 缓慢，受人力限制 | 快速，按需执行 |
-| 失败分析 | 人工排查，耗时长 | AI 自动定位原因并重试 |
-
-</div>
-
-<div v-click class="mt-6 p-3 rounded-lg border border-green-500/30 bg-green-500/5 text-sm">
-💡 <strong>关键价值：</strong>无需编写和维护自动化脚本，测试同学专注于<strong>用例设计和质量策略</strong>，Claude Code 直接驱动 Playwright CLI 执行测试
 </div>
 
 ---
@@ -199,6 +128,7 @@ claude "使用 playwright-cli 以可见窗口模式（--headed）
 
 ---
 layout: center
+class: text-center
 ---
 
 # 感谢聆听

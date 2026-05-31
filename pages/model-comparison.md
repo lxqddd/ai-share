@@ -31,10 +31,10 @@ layout: section
 <span class="font-bold">Anthropic</span>
 </div>
 <div class="text-sm space-y-1">
-<div><span class="opacity-50">旗舰：</span>Claude Opus 4.7</div>
+<div><span class="opacity-50">旗舰：</span>Claude Opus 4.8</div>
 <div><span class="opacity-50">均衡：</span>Claude Sonnet 4.6</div>
 <div><span class="opacity-50">轻量：</span>Claude Haiku 4.5</div>
-<div class="mt-2 text-xs opacity-50">2026.4 发布，Agent Teams</div>
+<div class="mt-2 text-xs opacity-50">2026.5 发布，更强可靠性与诚实性</div>
 </div>
 </div>
 
@@ -81,9 +81,9 @@ layout: section
 <span class="font-bold">通义千问 Qwen</span>
 </div>
 <div class="text-sm space-y-1">
-<div><span class="opacity-50">旗舰：</span>Qwen3.6-Plus</div>
-<div><span class="opacity-50">特点：</span>编程接近 Claude Opus 4.5</div>
-<div class="mt-2 text-xs opacity-50">1M 上下文，Agent 能力大幅增强</div>
+<div><span class="opacity-50">旗舰：</span>Qwen3.7-Max</div>
+<div><span class="opacity-50">次旗舰：</span>Qwen3.6-Plus</div>
+<div class="mt-2 text-xs opacity-50">SWE-bench 78.8，开源编程 SOTA</div>
 </div>
 </div>
 
@@ -141,7 +141,7 @@ layout: section
 
 | 排名 | 模型 | ELO | 厂商 |
 |:---:|------|:---:|------|
-| 1 | Claude Opus 4.7 (thinking) | 1567 | Anthropic |
+| 1 | Claude Opus 4.8 (thinking) | 1567 | Anthropic |
 | 2 | **GLM-5.1** | **1532** | 智谱 |
 | 3 | **Kimi K2.6** | **1519** | 月之暗面 |
 | 4 | Mistral Spark | 1509 | Mistral AI |
@@ -160,24 +160,37 @@ class: text-center
 
 # 模型选型建议
 
-<div class="mt-6 grid grid-cols-2 gap-5 text-left">
+<div class="mt-4 grid grid-cols-2 gap-3 text-left">
 
-<div v-click class="p-4 rounded-lg border border-blue-500/30 bg-blue-500/5">
-<div class="flex items-center gap-2 mb-2">
-<span class="text-lg font-bold text-blue-400">Claude</span>
+<div v-click class="p-2 rounded-lg border border-orange-500/30 bg-orange-500/5">
+<div class="flex items-center gap-2 mb-1">
+<span class="text-base font-bold text-orange-400">Claude</span>
 <span class="text-xs opacity-50">Anthropic</span>
 </div>
 <div class="text-sm space-y-1">
-<div><span class="opacity-50">代表：</span>Opus 4.7（#1）/ Sonnet 4.6（#6）</div>
+<div><span class="opacity-50">代表：</span>Opus 4.8（#1）/ Sonnet 4.6（#6）</div>
 <div><span class="opacity-50">优势：</span>WebDev 排行包揽前 4，编码质量公认最强</div>
 <div><span class="opacity-50">适合：</span>核心模块开发、复杂重构、代码审查</div>
 <div><span class="opacity-50">注意：</span>需海外 API 或中转，Opus 价格较高</div>
 </div>
 </div>
 
-<div v-click class="p-4 rounded-lg border border-green-500/30 bg-green-500/5">
-<div class="flex items-center gap-2 mb-2">
-<span class="text-lg font-bold text-green-400">GLM</span>
+<div v-click class="p-2 rounded-lg border border-green-500/30 bg-green-500/5">
+<div class="flex items-center gap-2 mb-1">
+<span class="text-base font-bold text-green-400">GPT</span>
+<span class="text-xs opacity-50">OpenAI</span>
+</div>
+<div class="text-sm space-y-1">
+<div><span class="opacity-50">代表：</span>GPT-5.5（#5）/ GPT-5.4 Pro</div>
+<div><span class="opacity-50">优势：</span>Terminal-Bench 82.7%，生态最完善，Codex 原生集成</div>
+<div><span class="opacity-50">适合：</span>通用编码、Codex CLI 自动化、全栈开发</div>
+<div><span class="opacity-50">注意：</span>需海外 API，Pro 版价格较高（$30/$180）</div>
+</div>
+</div>
+
+<div v-click class="p-2 rounded-lg border border-blue-500/30 bg-blue-500/5">
+<div class="flex items-center gap-2 mb-1">
+<span class="text-base font-bold text-blue-400">GLM</span>
 <span class="text-xs opacity-50">智谱</span>
 </div>
 <div class="text-sm space-y-1">
@@ -188,9 +201,9 @@ class: text-center
 </div>
 </div>
 
-<div v-click class="p-4 rounded-lg border border-amber-500/30 bg-amber-500/5">
-<div class="flex items-center gap-2 mb-2">
-<span class="text-lg font-bold text-amber-400">MiniMax</span>
+<div v-click class="p-2 rounded-lg border border-amber-500/30 bg-amber-500/5">
+<div class="flex items-center gap-2 mb-1">
+<span class="text-base font-bold text-amber-400">MiniMax</span>
 <span class="text-xs opacity-50">MiniMax</span>
 </div>
 <div class="text-sm space-y-1">
@@ -201,21 +214,17 @@ class: text-center
 </div>
 </div>
 
-<div v-click class="p-4 rounded-lg border border-purple-500/30 bg-purple-500/5">
-<div class="flex items-center gap-2 mb-2">
-<span class="text-lg font-bold text-purple-400">Qwen</span>
+<div v-click class="p-2 rounded-lg border border-purple-500/30 bg-purple-500/5">
+<div class="flex items-center gap-2 mb-1">
+<span class="text-base font-bold text-purple-400">Qwen</span>
 <span class="text-xs opacity-50">阿里</span>
 </div>
 <div class="text-sm space-y-1">
-<div><span class="opacity-50">代表：</span>Qwen3.6-Plus / Qwen3.6 Max（#10）</div>
-<div><span class="opacity-50">优势：</span>中国最强编程模型，1M 上下文，系列最全</div>
+<div><span class="opacity-50">代表：</span>Qwen3.7-Max / Qwen3.6-Plus（#6）</div>
+<div><span class="opacity-50">优势：</span>SWE-bench 78.8，最强开源编程模型，Agent 能力大幅增强</div>
 <div><span class="opacity-50">适合：</span>编程开发、Agent 工作流、私有化部署</div>
-<div><span class="opacity-50">价格：</span>Coding Plan Lite ¥40/月起，Pro ¥200/月</div>
+<div><span class="opacity-50">价格：</span>API 低至 ¥0.2/百万 Token，Coding Plan ¥40/月起</div>
 </div>
 </div>
 
-</div>
-
-<div v-click class="mt-4 text-sm opacity-50 text-center">
-  模型只是基础，接下来看看基于这些模型的编码工具有哪些 →
 </div>
